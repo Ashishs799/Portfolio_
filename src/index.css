@@ -6,8 +6,6 @@
   /* font-family: "Fredoka", serif; */
 }
 
-
-
 /* @layer components {
   .px-section {
     @apply px-32;
@@ -32,6 +30,43 @@
     padding-right: 2rem;
   }
 }
+
+.ipad {
+  perspective: 800px;
+  transform: rotateY(-35deg) rotateX(15deg);
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  transition: 2s ease;
+}
+
+.ipad:hover {
+  transform: rotate(0deg);
+}
+
+.chat {
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  transition: 2s ease;
+}
+
+.chat:hover {
+  transform: rotate(0deg);
+}
+
+.chat {
+  z-index: 1000; /* Ensure the Lottie animation is above other elements */
+}
+
+.phone-shadow {
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);  /* Shadow effect for the iPhone */
+  transform: translateY(10px); /* Slight vertical offset for shadow to appear realistic */
+}
+
+.font-fredoka {
+  font-family: "Fredoka", serif;
+}
+
 @layer utilities {
   @keyframes marquee-scroll {
     0% {
@@ -79,5 +114,51 @@
     width: 0;
     border-right: 3px solid white;
     animation: typing 6s steps(40, end) infinite, blink 0.7s infinite;
+  }
+
+  @keyframes html {
+    from {
+      width: 0;
+    }
+    to {
+      width: 90%;
+    }
+  }
+  .animate_html {
+    animation: html 2s 0.5s ease-in;
+  }
+  @keyframes css {
+    from {
+      width: 0;
+    }
+    to {
+      width: 85%;
+    }
+  }
+  .animate_css {
+    animation: css 2s 0.5s ease-in;
+  }
+  @keyframes js_reactjs {
+    from {
+      width: 0;
+    }
+    to {
+      width: 75%;
+    }
+  }
+  .animate_js_reactjs {
+    animation: js_reactjs 2s 0.5s ease-in;
+  }
+
+  @keyframes framer {
+    from {
+      width: 0;
+    }
+    to {
+      width: 70%;
+    }
+  }
+  .animate_framer {
+    animation: framer 2s 0.5s ease-in;
   }
 }

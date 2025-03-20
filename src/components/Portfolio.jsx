@@ -6,30 +6,9 @@ import taskmanager from "../assets/images/taskmanage.jpg";
 import eatwell from "../assets/images/Eatwell.png";
 
 const Portfolio = () => {
-  const projects = [
-    {
-      id: 1,
-      name: "E-Commerce Website",
-      description:
-        "A full-stack e-commerce platform with React.js and Firebase.",
-      image: "/images/ecommerce.png",
-      tech: ["React.js", "Firebase", "Tailwind"],
-      liveLink: "https://your-ecommerce-demo.com",
-      github: "https://github.com/yourgithub/ecommerce",
-    },
-    {
-      id: 2,
-      name: "Task Manager App",
-      description: "A Kanban-style task manager with drag-and-drop features.",
-      image: "/images/task-manager.png",
-      tech: ["React.js", "Beautiful DND", "Context API"],
-      liveLink: "https://your-taskmanager-demo.com",
-      github: "https://github.com/yourgithub/taskmanager",
-    },
-  ];
   return (
-    <div className=" w-full  px-40 py-20 bg-[#0D0D0D]">
-      <h1 className="text-sm font-bold tracking-wider uppercase text-pink-800 mb-8">
+    <div className=" w-full  px-40 py-20 bg-[#1C1B20] relative z-10">
+      <h1 className="text-2xl font-bold tracking-wider uppercase text-pink-600 mb-8">
         Work
       </h1>
       <div

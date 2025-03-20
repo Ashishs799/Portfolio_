@@ -9,9 +9,8 @@ import { SiMongodb } from "react-icons/si";
 const About = () => {
   return (
     <>
-      <div className=" bg-[#0D0D0D] h-screen w-full  z-100 px-40 pt-24">
-    
-        <h1 className="text-sm font-bold tracking-wider uppercase my-4 text-pink-800">
+      <div className=" bg-[#1C1B20] h-screen w-full px-40 pt-24 z-10 relative">
+        <h1 className="text-2xl font-bold tracking-wider uppercase my-4 text-pink-600">
           About me
         </h1>
         <div className="mt-8 ">

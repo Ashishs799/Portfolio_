@@ -29,11 +29,11 @@ const Hero = () => {
 
   return (
     <div className="bg-[#212020] z-10 relative">
-      <div className=" h-screen overflow-x-hidden w-full -z-10 ">
+      <div className=" h-screen overflow-x-hidden w-full ">
         <Navbar />
 
-        <div className="relative h-[640px] m-0 ">
-          <motion.div
+        <div className="relative w-full h-[640px] overflow-hidden m-0 ">
+          <div
             className=" font-bold block transition absolute top-32 left-1/2  transform -translate-x-1/2 -translate-y-1/2 "
             variants={textVariants}
             initial="hidden"
@@ -48,7 +48,7 @@ const Hero = () => {
                 Lohani
               </span>{" "}
             </span>
-          </motion.div>
+          </div>
 
           <img
             className="absolute bottom-0 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[700px] object-cover brightness-50 "
@@ -58,7 +58,7 @@ const Hero = () => {
             src={Photo}
             alt="Profile"
           />
-          <div className="ml-40 text-xl w-fit text-pink-800 flex flex-col items-center justify-between absolute bottom-10 ">
+          <div className="ml-40 text-xl w-fit text-pink-500 flex flex-col items-center justify-between absolute bottom-10 ">
             <span className="my-1.5 cursor-pointer hover:text-pink-800">
               <FaFacebookF />
             </span>
@@ -69,8 +69,6 @@ const Hero = () => {
               <FaLinkedinIn />
             </span>
           </div>
-
-        
         </div>
       </div>
     </div>
