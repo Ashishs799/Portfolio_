@@ -9,17 +9,17 @@ import { SiFramer } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <div className="bg-[#1C1B20] text-white h-screen w-screen px-40 py-20 relative z-10">
-      <h1 className="text-2xl font-bold tracking-wider uppercase text-pink-600 ">
+    <div className="bg-[#1C1B20] px-10 text-white 2xl:h-screen w-screen 2xl:px-40 py-20 relative z-10">
+      <h1 className="text-[10px] 2xl:text-2xl font-bold 2xl:tracking-[12px] tracking-[4px]  uppercase text-pink-600 ">
         Skills
       </h1>
-      <span className="text-6xl my-8 block text-white/">
+      <span className="text-xl my-4 2xl:text-6xl 2xl:my-8 block text-white/">
         Turning ideas into interactive, responsive, and visually stunning web
         experiences
       </span>
-      <div className=" w-full flex gap-x-20">
+      <div className=" w-full flex 2xl:flex-row flex-col gap-x-20">
         <div className="w-full flex flex-col">
-          <span className="text-2xl py-4 block">Frontend Development</span>
+          <span className="text-[16px] 2xl:text-2xl py-4 block">Frontend Development</span>
           <div className="w-full flex flex-col gap-y-4">
             <ProgressBar label="HTML" percentage={90} icon={<FaHtml5 />} />
             <ProgressBar label="CSS" percentage={85} icon={<FaCss3Alt />} />
@@ -32,7 +32,7 @@ const Skills = () => {
         </div>
 
         <div className=" w-full flex flex-col">
-          <span className="text-2xl py-4 block">Frameworks & Libraries</span>
+          <span className="text-[16px]  2xl:text-2xl py-4 block">Frameworks & Libraries</span>
           <div className="w-full flex flex-col gap-y-4">
             <ProgressBar label="React" percentage={75} icon={<FaReact />} />
             <ProgressBar

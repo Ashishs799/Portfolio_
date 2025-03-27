@@ -6,6 +6,9 @@
   /* font-family: "Fredoka", serif; */
 }
 
+.fredoka {
+  font-family: "Fredoka", serif !important;
+}
 /* @layer components {
   .px-section {
     @apply px-32;
@@ -59,8 +62,10 @@
 
 .phone-shadow {
   position: relative;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);  /* Shadow effect for the iPhone */
-  transform: translateY(10px); /* Slight vertical offset for shadow to appear realistic */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Shadow effect for the iPhone */
+  transform: translateY(
+    10px
+  ); /* Slight vertical offset for shadow to appear realistic */
 }
 
 .font-fredoka {
