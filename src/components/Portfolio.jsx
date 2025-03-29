@@ -38,7 +38,7 @@ const Portfolio = () => {
             <img
               src={taskcascade}
               alt="Image 1"
-              className="w-full h-full absolute top-0 left-0"
+              className="w-full h-full object-cover"
             />
           </motion.div>
           <motion.div
@@ -59,11 +59,10 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* Image */}
             <img
               src={tictactoe}
               alt="Image 2"
-              className="w-full h-full object-cover absolute top-0 left-0"
+              className="w-full h-full object-cover "
             />
           </motion.div>
         </div>
