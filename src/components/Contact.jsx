@@ -10,10 +10,11 @@ import Boy from "../assets/images/man.json";
 import Chat from "../assets/images/chatting.json";
 import Lottie from "lottie-react";
 import Phone from "../assets/images/iphone.jpg";
+import Social_media from "./Social_media/Social_media";
 
 const Contact = () => {
   return (
-    <div className="h-screen w-full px-10 py-20 2xl:px-40 2xl:py-20 bg-pink-100 sticky bottom-0 ">
+    <div className="h-screen w-full px-10 py-20 2xl:px-40 2xl:py-20 bg-pink-100 sticky bottom-0 scroll-mt-20" id="contact">
       <div className="h-full w-full bg-white flex 2xl:flex-row flex-col justify-center 2xl:justify-between 2xl:px-20 items-center">
         <div className=" w-full h-full 2xl:px-20 px-10  flex flex-col items-start justify-center">
           <span className="2xl:pt-20 2xl:pb-8 block 2xl:text-3xl ">
@@ -32,11 +33,7 @@ const Contact = () => {
             or find me on social media.
           </p>
 
-          <span className="2xl:text-xl 2xl:w-[100px] flex gap-2 my-2 2xl:my-6 justify-between items-center cursor-pointer ">
-            <FaFacebookF className="hover:text-pink-800 transition delay-150 duration-300  ease" />
-            <FaInstagram className="hover:text-pink-800 transition delay-150  duration-300 ease" />
-            <FaLinkedinIn className="hover:text-pink-800 transition delay-150 duration-300  ease" />
-          </span>
+          <Social_media />
         </div>
         <div className="w-full 2xl:w-md bg-red flex justify-center items-center relative">
           <div className=" flex justify-center items-center ">

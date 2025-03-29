@@ -10,7 +10,7 @@ import Button from "./Button/Button";
 const About = () => {
   return (
     <>
-      <div className="px-10 flex flex-col justify-center 2xl:block bg-[#1C1B20] h-screen 2xl:h-auto w-full 2xl:px-40 2xl:py-24 z-10 relative">
+      <div className="px-10 flex flex-col justify-center 2xl:block bg-[#1C1B20] h-screen 2xl:h-auto w-full 2xl:px-40 2xl:py-24 z-10 relative" id="about">
         <h1 className="text-[10px] tracking-[4px] 2xl:text-2xl font-bold 2xl:tracking-[12px] uppercase text-pink-600">
           About me
         </h1>

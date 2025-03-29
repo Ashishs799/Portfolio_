@@ -9,7 +9,7 @@ import { SiFramer } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <div className="bg-[#1C1B20] px-10 text-white 2xl:h-screen w-screen 2xl:px-40 py-20 relative z-10">
+    <div className="bg-[#1C1B20] px-10 text-white 2xl:h-screen w-screen 2xl:px-40 py-20 relative z-10" id="skills">
       <h1 className="text-[10px] 2xl:text-2xl font-bold 2xl:tracking-[12px] tracking-[4px]  uppercase text-pink-600 ">
         Skills
       </h1>

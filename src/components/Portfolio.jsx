@@ -8,7 +8,10 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Portfolio = () => {
   return (
-    <div className=" w-full px-10  2xl:px-40 2xl:py-20 bg-[#1C1B20] relative z-10">
+    <div
+      className=" w-full px-10  2xl:px-40 2xl:py-20 bg-[#1C1B20] relative z-10"
+      id="portfolio"
+    >
       <h1 className="text-[10px] tracking-[4px] 2xl:text-2xl font-bold 2xl:tracking-[12px] uppercase text-pink-600 mb-8">
         Work
       </h1>
