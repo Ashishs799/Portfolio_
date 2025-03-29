@@ -58,8 +58,8 @@ const Container = () => {
         <Side_Navbar scrollToSection={scrollToSection} />
       </div>
       <div
-        className={`fixed top-0 ${
-          isOpen ? "opacity-1000" : "opacity-0"
+        className={` top-0 ${
+          isOpen ? "fixed " : "hidden "
         } z-1000 right-0  transition-all delay-75 duration-200 ease-in`}
       >
         <Sidebar openSideBar={openSideBar} scrollToSection={scrollToSection} />
