@@ -17,13 +17,13 @@ function App() {
 
   return (
     <>
-      <Layout />
+      {/* <Layout /> */}
 
-      {/* {showIntro ? (
+      {showIntro ? (
         <Loader onComplete={() => setShowIntro(false)} />
       ) : (
         <Layout />
-      )} */}
+      )}
     </>
   );
 }

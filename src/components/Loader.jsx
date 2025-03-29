@@ -1,23 +1,35 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const Loader = ({ onComplete }) => {
+  const [text, setText] = useState("");
+  const fullText = "ASHISH";
+  const typingSpeed = 200; // Adjust speed of typing
+
   useEffect(() => {
-    setTimeout(() => {
-      onComplete();
-    }, 5000); // Duration of the loading animation (5 seconds)
+    let index = 0;
+    const interval = setInterval(() => {
+      setText(fullText.slice(0, index + 1));
+      index++;
+      if (index === fullText.length) {
+        clearInterval(interval);
+        setTimeout(onComplete, 1000); // Delay before completing
+      }
+    }, typingSpeed);
+
+    return () => clearInterval(interval);
   }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-white text-black text-9xl font-bold tracking-widest">
-      {/* Animated text */}
+    <div className="fixed inset-0 flex items-center justify-center bg-black text-white font-bold">
       <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         exit={{ opacity: 0, scale: 1.2 }}
-        transition={{ duration: 1, ease: "easeInOut", repeatType: "reverse" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="text-4xl sm:text-6xl md:text-7xl lg:text-9xl tracking-widest"
       >
-        ASHISH
+        {text}
       </motion.div>
     </div>
   );
