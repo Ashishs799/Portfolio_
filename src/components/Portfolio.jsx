@@ -25,21 +25,27 @@ const Portfolio = () => {
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            <div className="w-full h-full bg-[#a3004ca1] z-10 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 flex justify-center items-center transition delay-75 duration-200 ease-in">
-              <div className="flex gap-x-4 ">
-                <span className=" py-3 px-3 text-xs 2xl:py-3 2xl:px-6 2xl:text-[16px] bg-white rounded-4xl block">
-                  Taskcascade.com
-                </span>
-                <span className=" py-3 px-4 flex justify-center items-center bg-white rounded-4xl ">
-                  <MdArrowOutward />
-                </span>
+            <a
+              href="https://taskcascade.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-full h-full bg-[#a3004ca1] z-10 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 flex justify-center items-center transition delay-75 duration-200 ease-in">
+                <div className="flex gap-x-4 ">
+                  <span className=" py-3 px-3 text-xs 2xl:py-3 2xl:px-6 2xl:text-[16px] bg-white rounded-4xl block">
+                    Taskcascade.com
+                  </span>
+                  <span className=" py-3 px-4 flex justify-center items-center bg-white rounded-4xl ">
+                    <MdArrowOutward />
+                  </span>
+                </div>
               </div>
-            </div>
-            <img
-              src={taskcascade}
-              alt="Image 1"
-              className="w-full h-full object-cover"
-            />
+              <img
+                src={taskcascade}
+                alt="Image 1"
+                className="w-full h-full object-cover"
+              />
+            </a>
           </motion.div>
           <motion.div
             className="2xl:w-[900px] rounded-lg overflow-hidden 2xl:h-[400px] 2xl:self-end relative group"
@@ -48,22 +54,28 @@ const Portfolio = () => {
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            <div className="w-full h-full bg-[#a3004ca1] z-10 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 flex justify-center items-center transition delay-75 duration-200 ease-in">
-              <div className="flex gap-x-4">
-                <span className="py-3 px-3 text-xs 2xl:py-3 2xl:px-6 2xl:text-[16px] bg-white rounded-4xl block">
-                  TicTacToe Game
-                </span>
-                <span className="py-3 px-4 flex justify-center items-center bg-white rounded-4xl">
-                  <MdArrowOutward />
-                </span>
+            <a
+              href="https://tictactoe-ashish.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-full h-full bg-[#a3004ca1] z-10 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 flex justify-center items-center transition delay-75 duration-200 ease-in">
+                <div className="flex gap-x-4">
+                  <span className="py-3 px-3 text-xs 2xl:py-3 2xl:px-6 2xl:text-[16px] bg-white rounded-4xl block">
+                    TicTacToe Game
+                  </span>
+                  <span className="py-3 px-4 flex justify-center items-center bg-white rounded-4xl">
+                    <MdArrowOutward />
+                  </span>
+                </div>
               </div>
-            </div>
 
-            <img
-              src={tictactoe}
-              alt="Image 2"
-              className="w-full h-full object-cover "
-            />
+              <img
+                src={tictactoe}
+                alt="Image 2"
+                className="w-full h-full object-cover "
+              />
+            </a>
           </motion.div>
         </div>
         <motion.div
@@ -74,21 +86,27 @@ const Portfolio = () => {
           className="2xl:px-40 2xl:py-16 "
         >
           <div className="rounded-lg overflow-hidden relative group">
-            <div className="w-full h-full bg-[#a3004ca1] z-10 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 flex justify-center items-center transition duration-200 ease-in">
-              <div className="flex gap-x-4">
-                <span className="2xl:py-3 py-3 px-3 text-xs 2xl:px-6 2xl:text-[16px] bg-white rounded-4xl block">
-                  E-commerce Project
-                </span>
-                <span className="py-3 px-4 flex justify-center items-center bg-white rounded-4xl">
-                  <MdArrowOutward />
-                </span>
+            <a
+              href="https://ssneakerzzz.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-full h-full bg-[#a3004ca1] z-10 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 flex justify-center items-center transition duration-200 ease-in">
+                <div className="flex gap-x-4">
+                  <span className="2xl:py-3 py-3 px-3 text-xs 2xl:px-6 2xl:text-[16px] bg-white rounded-4xl block">
+                    E-commerce Project
+                  </span>
+                  <span className="py-3 px-4 flex justify-center items-center bg-white rounded-4xl">
+                    <MdArrowOutward />
+                  </span>
+                </div>
               </div>
-            </div>
-            <img
-              src={ecommerce}
-              alt="Image 3"
-              className="w-full h-full object-cover"
-            />
+              <img
+                src={ecommerce}
+                alt="Image 3"
+                className="w-full h-full object-cover"
+              />
+            </a>
           </div>
         </motion.div>
         <motion.div className="flex flex-col 2xl:flex-row 2xl:gap-12 gap-y-4">
@@ -99,22 +117,28 @@ const Portfolio = () => {
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            <div className="w-full h-full bg-[#a3004ca1] z-10 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 flex justify-center items-center transition duration-200 ease-in">
-              <div className="flex gap-x-4">
-                <span className="text-xs py-3 px-3 2xl:py-3 2xl:px-6 2xl:text-[16px] bg-white rounded-4xl block">
-                  Task Manager
-                </span>
-                <span className="py-3 px-4 flex justify-center items-center bg-white rounded-4xl">
-                  <MdArrowOutward />
-                </span>
+            <a
+              href="https://settask.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-full h-full bg-[#a3004ca1] z-10 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 flex justify-center items-center transition duration-200 ease-in">
+                <div className="flex gap-x-4">
+                  <span className="text-xs py-3 px-3 2xl:py-3 2xl:px-6 2xl:text-[16px] bg-white rounded-4xl block">
+                    Task Manager
+                  </span>
+                  <span className="py-3 px-4 flex justify-center items-center bg-white rounded-4xl">
+                    <MdArrowOutward />
+                  </span>
+                </div>
               </div>
-            </div>
 
-            <img
-              src={taskmanager}
-              alt="Image 5"
-              className="2xl:w-fit h-full object-cover"
-            />
+              <img
+                src={taskmanager}
+                alt="Image 5"
+                className="2xl:w-fit h-full object-cover"
+              />
+            </a>
           </motion.div>
           <motion.div
             className="rounded-lg overflow-hidden relative group"
@@ -123,22 +147,28 @@ const Portfolio = () => {
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.8 }}
           >
-            <div className="w-full h-full bg-[#a3004ca1] z-10 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 flex justify-center items-center transition duration-200 ease-in">
-              <div className="flex gap-x-4">
-                <span className="text-xs py-3 px-3 2xl:py-3 2xl:px-6 2xl:text-[16px] bg-white rounded-4xl block">
-                  Restaurant E-commerce Website
-                </span>
-                <span className="py-3 px-4 flex justify-center items-center bg-white rounded-4xl">
-                  <MdArrowOutward />
-                </span>
+            <a
+              href="https://eatwell-restro.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-full h-full bg-[#a3004ca1] z-10 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 flex justify-center items-center transition duration-200 ease-in">
+                <div className="flex gap-x-4">
+                  <span className="text-xs py-3 px-3 2xl:py-3 2xl:px-6 2xl:text-[16px] bg-white rounded-4xl block">
+                    Restaurant E-commerce Website
+                  </span>
+                  <span className="py-3 px-4 flex justify-center items-center bg-white rounded-4xl">
+                    <MdArrowOutward />
+                  </span>
+                </div>
               </div>
-            </div>
 
-            <img
-              src={eatwell}
-              alt="Image 4"
-              className="w-full h-full object-cover"
-            />
+              <img
+                src={eatwell}
+                alt="Image 4"
+                className="w-full h-full object-cover"
+              />
+            </a>
           </motion.div>
         </motion.div>
       </div>
