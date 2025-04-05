@@ -1,6 +1,7 @@
 import React from "react";
 import ecommerce from "../assets/images/pahiranlptp.png";
 import taskcascade from "../assets/images/taskcascade.png";
+import Ipad from "../assets/images/Ipad2.png";
 import { motion } from "framer-motion";
 import tictactoe from "../assets/images/tictactoebg.jpg";
 import taskmanager from "../assets/images/taskmanagerapp.jpg";
@@ -109,7 +110,7 @@ const Portfolio = () => {
             </a>
           </div>
         </motion.div>
-        <motion.div className="flex flex-col 2xl:flex-row 2xl:gap-12 gap-y-4">
+        <motion.div className="flex flex-col 2xl:flex-row 2xl:gap-12 gap-y-4  ">
           <motion.div
             className="2xl:w-[900px] rounded-lg overflow-hidden relative group"
             initial={{ scale: 0 }}
@@ -140,36 +141,68 @@ const Portfolio = () => {
               />
             </a>
           </motion.div>
-          <motion.div
-            className="rounded-lg overflow-hidden relative group"
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.8 }}
-          >
-            <a
-              href="https://eatwell-restro.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
+          <div className="flex flex-col gap-y-10">
+            <motion.div
+              className="rounded-lg overflow-hidden relative group"
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.8 }}
             >
-              <div className="w-full h-full bg-[#a3004ca1] z-10 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 flex justify-center items-center transition duration-200 ease-in">
-                <div className="flex gap-x-4">
-                  <span className="text-xs py-3 px-3 2xl:py-3 2xl:px-6 2xl:text-[16px] bg-white rounded-4xl block">
-                    Restaurant E-commerce Website
-                  </span>
-                  <span className="py-3 px-4 flex justify-center items-center bg-white rounded-4xl">
-                    <MdArrowOutward />
-                  </span>
+              <a
+                href="https://portfolio-ashish-demo.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-full h-full bg-[#a3004ca1] z-10 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 flex justify-center items-center transition duration-200 ease-in">
+                  <div className="flex gap-x-4">
+                    <span className="text-xs py-3 px-3 2xl:py-3 2xl:px-6 2xl:text-[16px] bg-white rounded-4xl block">
+                      Portfolio Website
+                    </span>
+                    <span className="py-3 px-4 flex justify-center items-center bg-white rounded-4xl">
+                      <MdArrowOutward />
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <img
-                src={eatwell}
-                alt="Image 4"
-                className="w-full h-full object-cover"
-              />
-            </a>
-          </motion.div>
+                <img
+                  src={Ipad}
+                  alt="Image 4"
+                  className="w-full h-full object-cover"
+                />
+              </a>
+            </motion.div>
+            <motion.div
+              className="rounded-lg overflow-hidden relative group"
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.8 }}
+            >
+              <a
+                href="https://eatwell-restro.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-full h-full bg-[#a3004ca1] z-10 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 flex justify-center items-center transition duration-200 ease-in">
+                  <div className="flex gap-x-4">
+                    <span className="text-xs py-3 px-3 2xl:py-3 2xl:px-6 2xl:text-[16px] bg-white rounded-4xl block">
+                      Restaurant E-commerce Website
+                    </span>
+                    <span className="py-3 px-4 flex justify-center items-center bg-white rounded-4xl">
+                      <MdArrowOutward />
+                    </span>
+                  </div>
+                </div>
+
+                <img
+                  src={eatwell}
+                  alt="Image 4"
+                  className="w-full h-full object-cover"
+                />
+              </a>
+            </motion.div>
+          </div>
         </motion.div>
       </div>
     </div>
