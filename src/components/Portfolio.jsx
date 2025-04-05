@@ -141,7 +141,7 @@ const Portfolio = () => {
               />
             </a>
           </motion.div>
-          <div className="flex flex-col gap-y-10">
+          <div className="flex flex-col 2xl:gap-12 gap-y-4">
             <motion.div
               className="rounded-lg overflow-hidden relative group"
               initial={{ scale: 0 }}
